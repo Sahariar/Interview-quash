@@ -6,7 +6,8 @@ import NotFound from '../components/NotFound/NotFound';
 import Root from '../components/Root/Root';
 import Statistics from '../components/Statistics/Statistics';
 import Subjects from '../components/Subjects/Subjects';
-import { dataLoader } from './DataLoader';
+import SubjectTestLay from '../components/SubjectTestLay/SubjectTestLay';
+import { dataLoader, dataLoaderWithParam } from './DataLoader';
 
 
 
@@ -23,6 +24,14 @@ const router = createBrowserRouter([
         {
             path:'subjects',
             element:<Subjects />
+        },
+        {
+            path:'subjects/:id',
+            loader: async({params}) => {
+                console.log(params.subjectsId);
+               return fetch(`https://openapi.programming-hero.com/api/quiz/${params.id}`)
+            },
+            element:<SubjectTestLay />
         },
         {
             path:'statistics',

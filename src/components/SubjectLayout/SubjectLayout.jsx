@@ -1,7 +1,13 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const SubjectLayout = ({subject}) => {
     const {id,logo,name,total } = subject
+    const navigate = useNavigate();
+    const handleNavigate = () =>{
+        navigate(`/subjects/${id}`);
+  }
+
     return (
 
         <div className="card card-side  shadow-xl">
@@ -10,7 +16,11 @@ const SubjectLayout = ({subject}) => {
     <h2 className="card-title">{name}</h2>
     <p>Total Quiz: {total}</p>
     <div className="card-actions justify-center">
-    <button className="btn btn-primary">Start Quiz</button>
+    <button className="btn btn-primary" onClick={
+        () => {
+            handleNavigate()
+        }
+    }>Start Quiz</button>
     </div>
   </div>
 </div>

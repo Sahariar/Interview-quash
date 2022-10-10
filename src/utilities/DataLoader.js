@@ -5,3 +5,9 @@ export const dataLoader = async () => {
     return {subjects}
 } 
 
+export const dataLoaderWithParam = async ({params}) => {
+    const testData = await fetch(`https://openapi.programming-hero.com/api/quiz/${params.subjectsId}`);
+    const testLoadData = await testData.json();
+    const tests = testLoadData
+    return {tests}
+} 
