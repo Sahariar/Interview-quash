@@ -4,10 +4,8 @@ import QuizArea from '../QuizArea/QuizArea';
 
 const SubjectTestLay = () => {
     const subjectTest = useLoaderData().data;
-    console.log(subjectTest);
-
     const subjectQuestion = subjectTest.questions
-    console.log(subjectQuestion)
+
     return (
         <section className='meals-details-page'>
             

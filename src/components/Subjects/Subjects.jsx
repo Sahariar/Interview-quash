@@ -4,8 +4,6 @@ import SubjectLayout from '../SubjectLayout/SubjectLayout';
 
 const Subjects = () => {
     const subjects = useContext(SubjectContext);
-    console.log(subjects);
-    console.log(window.location.pathname)
     const pathUrl = window.location.pathname
     let titleName;
     if(pathUrl !== '/subjects'){
