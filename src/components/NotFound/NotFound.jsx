@@ -16,7 +16,7 @@ const NotFound = () => {
                     Looks like you are going somewhere we can't found the Path
                 </p>
                 <p className="mt-4 mb-8 dark:text-gray-400">
-                    But dont worry, you can find plenty of other things on our homepage.{" "}
+                    But don't worry, you can find plenty of other things on our homepage.{" "}
                 </p>
                 <Link to={"/"}>
                     <span className="px-8 py-3 font-semibold rounded btn btn-primary">

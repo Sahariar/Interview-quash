@@ -27,11 +27,11 @@ const Header = () => {
 							tabIndex={0}
 							className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
 						>
-							<li>
-								<NavLink to={"home"}>Topics</NavLink>
+							<li className="uppercase">
+								<NavLink to={"subjects"}>Subjects</NavLink>
 							</li>
 							<li>
-								<NavLink to={"shop"}>Shop</NavLink>
+								<NavLink to={"statistics"}>Statistics</NavLink>
 							</li>
 							<li>
 								<NavLink to={"blog"}>Blog</NavLink>
@@ -63,13 +63,13 @@ const Header = () => {
 				<div className="navbar-end flex">
 					<div className="navbar-end hidden lg:flex">
 						<ul className="menu menu-horizontal p-0">
-							<li>
-								<NavLink to={"home"}>Home</NavLink>
+						<li className="uppercase">
+								<NavLink to={"subjects"}>Subjects</NavLink>
 							</li>
-							<li>
-								<NavLink to={"shop"}>Shop</NavLink>
+							<li className="uppercase">
+								<NavLink to={"statistics"}>Statistics</NavLink>
 							</li>
-							<li>
+							<li className="uppercase">
 								<NavLink to={"blog"}>Blog</NavLink>
 							</li>
 						</ul>

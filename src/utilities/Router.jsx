@@ -6,6 +6,7 @@ import NotFound from '../components/NotFound/NotFound';
 import Root from '../components/Root/Root';
 import Statistics from '../components/Statistics/Statistics';
 import Subjects from '../components/Subjects/Subjects';
+import { dataLoader } from './DataLoader';
 
 
 
@@ -13,6 +14,7 @@ const router = createBrowserRouter([
     {
         path:'/',
         element:<Root />,
+        loader:dataLoader,
         children:[
             {
             path:'/',
