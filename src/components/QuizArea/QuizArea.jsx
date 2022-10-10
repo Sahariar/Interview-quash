@@ -1,14 +1,13 @@
 import React from 'react';
+import parse from 'html-react-parser';
 
 const QuizArea = ({quiz}) => {
     const {question,options,} = quiz
-    const stringOfQues = question;
-    const result = stringOfQues.replace(/(<p[^>]+?>|<p>|<\/p>)/img, "");
-    const finalText = result.replace(/\&nbsp;/g, '');
+    const finalQuestion = parse(question);
     return (
-<div className="card w-96 bg-neutral text-neutral-content">
+<div className="card w-8/12 mx-auto bg-secondary my-10 shadow-xl rounded-xl">
   <div className="card-body items-center text-center">
-    <h2 className="card-title">{finalText}</h2>
+    <h2 className="title text-2xl">{finalQuestion}</h2>
 
   </div>
 </div>
