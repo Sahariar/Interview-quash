@@ -64,6 +64,9 @@ const Header = () => {
 					<div className="hidden lg:flex">
 						<ul className="menu menu-horizontal p-0">
 						<li className="uppercase">
+								<NavLink to={"home"}>Home</NavLink>
+							</li>
+						<li className="uppercase">
 								<NavLink to={"subjects"}>Subjects</NavLink>
 							</li>
 							<li className="uppercase">
