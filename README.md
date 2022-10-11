@@ -8,6 +8,9 @@
 
 ### ✨ [Demo](https://interview-quash.netlify.app/)
 
+
+
+
 ## Install
 
 ```sh
@@ -21,12 +24,6 @@ npm install
 * Website: http://sahariarkabir.com/
 * Twitter: [@Sahariar\_\_Kabir](https://twitter.com/Sahariar\_\_Kabir)
 * Github: [@Sahariar](https://github.com/Sahariar)
-
-## Show your support
-
-Give a ⭐️ if this project helped you!
-
-[![support us](https://img.shields.io/badge/become-a patreon%20us-orange.svg?cacheSeconds=2592000)](https://www.patreon.com/81017634)
 
 
 ***
