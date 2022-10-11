@@ -2,7 +2,7 @@
 ![Version](https://img.shields.io/badge/version-1.0.1-blue.svg?cacheSeconds=2592000)
 [![Twitter: Sahariar\_\_Kabir](https://img.shields.io/twitter/follow/Sahariar\_\_Kabir.svg?style=social)](https://twitter.com/Sahariar\_\_Kabir)
 
-> This is a SPA site With react + Router + Tailwind css
+> A Place To Test Your Theory ofProgramming Languages. Site has ability to reder client side. Fully Responsive, Have Quiz for 4 Popular Programing Library and Languages.
 
 ### 🏠 [Homepage](https://interview-quash.netlify.app/)
 
