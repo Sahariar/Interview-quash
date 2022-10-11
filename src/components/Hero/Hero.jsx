@@ -19,7 +19,7 @@ const Hero = () => {
 	return (
 		<section className="hero-area my-10">
 			<div className="container flex flex-col-reverse justify-center sm:p-5 md:p-20 mx-auto sm:py-12 bg-blue-50 lg:py-24 lg:flex-row lg:justify-around rounded-2xl shadow-lg">
-				<div className="flex flex-col justify-center p-6 text-center rounded-sm  lg:text-left lg:w-6/12">
+				<div className="flex flex-col justify-center p-6 text-center rounded-sm  lg:text-left lg:w-6/12 mt-10 lg:mt-0">
 					<h1 className="text-5xl font-bold leading-none sm:text-6xl">
 						InterView
 						<span className="text-primary"> Quash</span>

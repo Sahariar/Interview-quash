@@ -9,6 +9,7 @@ const QuizArea = ({ quiz }) => {
 	const handleShowAnswer = () => {
 		setIsActive(!isActive);
 	};
+	
 	let answerArea;
 	if (isActive) {
 		answerArea = (
@@ -24,7 +25,7 @@ const QuizArea = ({ quiz }) => {
 	return (
 		<div className="card mx-auto bg-blue-50 my-10 shadow-xl rounded-xl">
 			<div className="flex justify-center text-center pt-10 px-4">
-				<h2 className="title text-2xl px-10 ">{finalQuestion}</h2>
+				<h2 className="title text-2xl px-10 ">Quiz:{finalQuestion}</h2>
 				<div className="">
 					<button
 						className="btn btn-circle btn-outline btn-primary"
