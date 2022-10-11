@@ -5,7 +5,7 @@ const Hero = () => {
 	const headerSvg = heroheader;
 	return (
 		<section className="hero-area my-10">
-			<div className="container flex flex-col justify-center p-20 mx-auto sm:py-12 bg-blue-50 lg:py-24 lg:flex-row lg:justify-around rounded-2xl shadow-lg">
+			<div className="container flex flex-col justify-center sm:p-5 md:p-20 mx-auto sm:py-12 bg-blue-50 lg:py-24 lg:flex-row lg:justify-around rounded-2xl shadow-lg">
 				<div className="flex flex-col justify-center p-6 text-center rounded-sm  lg:text-left lg:w-6/12">
 					<h1 className="text-5xl font-bold leading-none sm:text-6xl">
 						InterView

@@ -5,7 +5,7 @@ const Header = () => {
 	return (
 		<header className="navbar">
 			<div className="container mx-auto">
-				<div className="navbar-start">
+				<div className="navbar-start flex">
 					<div className="dropdown">
 						<label tabIndex={0} className="btn btn-ghost lg:hidden">
 							<svg
