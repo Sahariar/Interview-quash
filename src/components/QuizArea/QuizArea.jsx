@@ -10,19 +10,20 @@ const QuizArea = ({ quiz }) => {
 		setIsActive(!isActive);
 	};
 	let answerArea;
-	if(isActive){
-		answerArea = <div className="bg-success w-1/2 my-5 p-10  mx-auto rounded-xl shadow-xl">
-        <h2 className="text-2xl text-neutral capitalize px-12 text-center">
-			{correctAnswer}
-    </h2>
-		</div>
-	} else{
-
+	if (isActive) {
+		answerArea = (
+			<div className="bg-success w-1/2 my-5 p-10  mx-auto rounded-xl shadow-xl">
+				<h2 className="text-2xl text-neutral capitalize px-12 text-center">
+					{correctAnswer}
+				</h2>
+			</div>
+		);
+	} else {
 	}
 
 	return (
 		<div className="card mx-auto bg-blue-50 my-10 shadow-xl rounded-xl">
-			<div className="flex justify-center pt-10 px-4">
+			<div className="flex justify-center text-center pt-10 px-4">
 				<h2 className="title text-2xl px-10 ">{finalQuestion}</h2>
 				<div className="">
 					<button
