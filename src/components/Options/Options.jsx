@@ -4,7 +4,6 @@ import { CorrectAnsCounter } from "../Root/Root";
 
 const Options = ({ option, quiz }) => {
 	const { correctAnswer, id } = quiz;
-	console.log(isActiveElement);
 	const [correctCount, setCorrectCount] = useContext(CorrectAnsCounter);
 	const successAnswer = () =>
 		toast.success("Correct Answer,Next One", {
