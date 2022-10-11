@@ -1,8 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
-import heroheader from "../../assets/svg/hero-header.svg";
+import lottie from "lottie-web";
+import headerAnimation from "../../assets/headeranimation.json";
 const Hero = () => {
-	const headerSvg = heroheader;
+
+	useEffect(() => {
+		const instance = lottie.loadAnimation({
+			container: document.querySelector("#headerAnimation"),
+			animationData: headerAnimation,
+			renderer: "svg", // "canvas", "html"
+			loop: true, // boolean
+			autoplay: true, // boolean
+		  });
+
+		
+		return () => instance.destroy();
+	  }, []);
 	return (
 		<section className="hero-area my-10">
 			<div className="container flex flex-col justify-center sm:p-5 md:p-20 mx-auto sm:py-12 bg-blue-50 lg:py-24 lg:flex-row lg:justify-around rounded-2xl shadow-lg">
@@ -28,7 +41,9 @@ const Hero = () => {
 					</div>
 				</div>
 				<div className="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-128 xl:h-112 2xl:h-128 lg:w-6/12">
-					<img src={headerSvg} alt="" className="object-contain h-128" />
+				<div id="headerAnimation" />
+			
+				
 				</div>
 			</div>
 		</section>
