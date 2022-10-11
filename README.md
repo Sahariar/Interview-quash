@@ -8,7 +8,7 @@
 
 ### ✨ [Demo](https://interview-quash.netlify.app/)
 
- What did i do for this Project?
+###  What did i do for this Project?
   * Added Logo and Favicon,
   * Added Header component,
   * used Tailwindcss with daisyUi,
@@ -18,7 +18,7 @@
   * use props to Show quiz data.
   * Setup Correct answer and mark information
 
-* Feature
+### Feature
  * SPA site,
  * Api Fetch,
  * 404 page,
