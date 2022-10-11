@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
+import { CorrectAnsCounter } from "../Root/Root";
 
 const Options = ({ option, quiz }) => {
     const {correctAnswer,id } = quiz
-    const [isActive, setIsActive] = useState(false);
+	const [correctCount , setCorrectCount] = useContext(CorrectAnsCounter);
 	const successAnswer = () => toast.success('Correct Answer,Next One', {
 		position: "top-center",
 		autoClose: 1000,
@@ -33,34 +34,36 @@ const Options = ({ option, quiz }) => {
 	
 	// 	}
 	// }
+	let targetValue;
+
     const handleChange = (e) => {
         // string passed in
         // add + to the event to make the value a number
       };
 	  const handleClick = (e) => {
         // string passed in
-		setUserAnswer(e.currentTarget.value);
-		if (correctAnswer === e.currentTarget.value) {
+		targetValue = e.currentTarget.value
+        // add + to the event to make the value a number
+		if (correctAnswer === targetValue) {
 			successAnswer();
 		} else {
 			wrongAnswer();
 		}
 
-		console.log(e.currentTarget.value)
-        // add + to the event to make the value a number
       };
 
+	
 	return (
 		<div className="form-control">
-			<label className="label cursor-pointer justify-around  rounded-lg shadow-xl p-10 m-4 hover:bg-warning bg-blue-200">
+			<label className="label cursor-pointer justify-center  rounded-lg shadow-xl p-10 m-4 hover:bg-warning bg-blue-200">
 				<input
 					type="radio"
-                    name='radioOne'
+                    name={id}
 					value={option}
 					className="radio checked:bg-primary bg-white mr-5"
                     onChange={handleChange}
-					checked
 					onClick={handleClick}
+					defaultChecked={false}
 				/>
 				<span className="text-center">{option}</span>
 			</label>

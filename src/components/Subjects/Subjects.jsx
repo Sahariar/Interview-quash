@@ -19,7 +19,7 @@ const Subjects = () => {
 </div>
     }else{
         titleName= 
-        <div className="space-y-2 text-center bg-blue-50 rounded-2xl shadow-lg py-10">
+        <div className="space-y-2 text-center py-10">
 			<h2 className="text-3xl font-bold">Subject</h2>
 			<p className="font-serif text-xl">Test Your Skill and Knowledge</p>
 		</div>
@@ -27,7 +27,7 @@ const Subjects = () => {
     }
 
     return (
-        <section className="subject-area">
+        <section className="subject-area my-20">
             <div className="container p-6 mx-auto space-y-8">
                 {titleName}
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 my-10">
