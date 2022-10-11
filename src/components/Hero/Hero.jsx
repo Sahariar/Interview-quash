@@ -18,16 +18,16 @@ const Hero = () => {
 	  }, []);
 	return (
 		<section className="hero-area my-10">
-			<div className="container flex flex-col justify-center sm:p-5 md:p-20 mx-auto sm:py-12 bg-blue-50 lg:py-24 lg:flex-row lg:justify-around rounded-2xl shadow-lg">
+			<div className="container flex flex-col-reverse justify-center sm:p-5 md:p-20 mx-auto sm:py-12 bg-blue-50 lg:py-24 lg:flex-row lg:justify-around rounded-2xl shadow-lg">
 				<div className="flex flex-col justify-center p-6 text-center rounded-sm  lg:text-left lg:w-6/12">
 					<h1 className="text-5xl font-bold leading-none sm:text-6xl">
 						InterView
 						<span className="text-primary"> Quash</span>
 					</h1>
-					<p className="mt-6 lg:mb-6 sm:mb-12 text-xl text-gray-700">
+					<p className="mt-6 lg:mb-6 sm:mb-12 text-xl my-4">
 						A Place To Test Your
 						<br className="hidden md:inline lg:hidden" /> Theory of
-						<span className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-accent relative inline-block ml-4">
+						<span className="mt-6 before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-accent relative inline-block ml-4">
 							<span className="relative "> Programming Languages.</span>
 						</span>
 					</p>

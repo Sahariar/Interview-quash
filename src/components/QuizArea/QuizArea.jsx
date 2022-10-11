@@ -12,7 +12,7 @@ const QuizArea = ({ quiz }) => {
 	let answerArea;
 	if (isActive) {
 		answerArea = (
-			<div className="bg-success w-1/2 my-5 p-10  mx-auto rounded-xl shadow-xl">
+			<div className="bg-success lg:w-1/2 w-10/12 my-5 p-10  mx-auto rounded-xl shadow-xl">
 				<h2 className="text-2xl text-neutral capitalize px-12 text-center">
 					{correctAnswer}
 				</h2>

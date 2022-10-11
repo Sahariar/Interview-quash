@@ -4,7 +4,7 @@ const AppDownload = () => {
     return (
         <section className="bg-accent mt-10">
         <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-        <div className="max-w-lg sm:text-center sm:mx-auto">
+        <div className="max-w-lg text-center mx-auto">
           
           <a
             href="/"
@@ -12,23 +12,14 @@ const AppDownload = () => {
             title="Logo"
             className="inline-block mb-4"
           >
-            <div className="flex items-center justify-center w-12 h-12 rounded-full bg-indigo-50">
-              <svg
-                className="w-10 h-10 text-deep-purple-accent-400"
-                stroke="currentColor"
-                viewBox="0 0 52 52"
-              >
-                <polygon
-                  strokeWidth="3"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  fill="none"
-                  points="29 13 14 29 25 29 23 39 38 23 27 23"
-                />
-              </svg>
+            <div className="flex items-center justify-center w-12 h-12 rounded-full bg-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 fill-blue-50">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+</svg>
+
             </div>
           </a>
-          <h2 className="mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
+          <h2 className="mb-6 font-sans text-3xl font-bold tracking-tight sm:text-4xl sm:leading-none">
             <span className="relative inline-block">
               <svg
                 viewBox="0 0 52 24"
@@ -53,15 +44,15 @@ const AppDownload = () => {
                 />
               </svg>
             </span>{' '}
-            Download Our     <span className="my-10 before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-primary relative inline-block ml-4">
-							<span className="relative px-10 text-white text-5xl ">Interview Quash</span>
-						</span>  App from Below
+            Download Our<span className="my-10 before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-primary relative inline-block ml-4">
+							<span className="relative md:px-10 text-white md:text-5xl ">Interview Quash</span>
+						</span> <br />  App from Below
           </h2>
           <p className="text-base text-gray-700 md:text-lg">
           A quiz is a form of game or mind sport in which players attempt to answer questions correctly about a certain or variety of subjects.
           </p>
           <hr className="my-8 border-gray-300" />
-          <div className="flex items-center mb-3 sm:justify-center">
+          <div className="flex items-center mb-3 justify-center">
             <a href="/" className="mr-3 transition duration-300 hover:shadow-lg">
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/1000px-Download_on_the_App_Store_Badge.svg.png"
@@ -77,7 +68,7 @@ const AppDownload = () => {
               />
             </a>
           </div>
-          <p className="max-w-xs text-xs text-gray-600 sm:text-sm sm:max-w-sm sm:mx-auto">
+          <p className="max-w-xs text-xs text-gray-600 sm:text-sm sm:max-w-sm mx-auto">
             Do Something wonderful for yourself.
           </p>
         </div>

@@ -27,7 +27,7 @@ const Blog = () => {
 								</a>
 							</div>
 							<div className="flex justify-start">
-								<span className="px-2 py-1 text-xs rounded-full dark:bg-violet-400 dark:text-gray-900">
+								<span className="px-2 py-1 text-xs rounded-full bg-primary text-white ">
 									React Router
 								</span>
 							</div>
@@ -110,7 +110,7 @@ const Blog = () => {
 								</a>
 							</div>
 							<div className="flex justify-start">
-								<span className="px-2 py-1 text-xs rounded-full dark:bg-violet-400 dark:text-gray-900">
+								<span className="px-2 py-1 text-xs rounded-full bg-primary text-white ">
 									Context API
 								</span>
 							</div>
@@ -155,7 +155,7 @@ const Blog = () => {
 								</a>
 							</div>
 							<div className="flex justify-start">
-								<span className="px-2 py-1 text-xs rounded-full dark:bg-violet-400 dark:text-gray-900">
+								<span className="px-2 py-1 text-xs rounded-full bg-primary text-white ">
 									useRef
 								</span>
 							</div>

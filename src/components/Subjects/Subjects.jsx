@@ -9,9 +9,9 @@ const Subjects = () => {
     if(pathUrl !== '/subjects'){
         titleName = 
         <div className="my-5">
-        <h2 className="text-3xl uppercase px-12">
+        <h2 className="text-3xl uppercase md:px-12">
         Pick Your<span className="mb-5 before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-primary relative inline-block ml-4">
-                    <span className="relative px-10 text-white text-5xl">Subject</span>
+                    <span className="relative md:px-10 text-white md:text-5xl">Subject</span>
                 </span>
                 <br />
     To start the Test.
