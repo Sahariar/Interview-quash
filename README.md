@@ -8,11 +8,15 @@
 
 ### ✨ [Demo](https://interview-quash.netlify.app/)
 
- * Bullet list
-              * Nested bullet
-                  * Sub-nested bullet etc
-          * Bullet list item 2
-
+* What I did for this Project?
+  * Added Logo and Favicon,
+  * Added Header component,
+  * used Tailwindcss with daisyUi,
+  * used lottie react animation for Animation
+  * Use React-router for Routing url and Client site rendering.
+  * Used UseContext for For data to avialable for Whole app.
+  * use props for Show quiz data.
+  * Setup Correct answer and mark information
 
 
 ## Install
@@ -28,7 +32,3 @@ npm install
 * Website: http://sahariarkabir.com/
 * Twitter: [@Sahariar\_\_Kabir](https://twitter.com/Sahariar\_\_Kabir)
 * Github: [@Sahariar](https://github.com/Sahariar)
-
-
-***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
