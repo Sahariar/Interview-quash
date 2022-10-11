@@ -46,8 +46,10 @@ const Options = ({ option, quiz }) => {
         // add + to the event to make the value a number
 		if (correctAnswer === targetValue) {
 			successAnswer();
+			setCorrectCount(correctCount + 1);
 		} else {
 			wrongAnswer();
+			setCorrectCount(correctCount);
 		}
 
       };
@@ -55,7 +57,7 @@ const Options = ({ option, quiz }) => {
 	
 	return (
 		<div className="form-control">
-			<label className="label cursor-pointer justify-center  rounded-lg shadow-xl p-10 m-4 hover:bg-warning bg-blue-200">
+			<label className="label cursor-pointer justify-center checked:bg-primary  rounded-lg shadow-xl p-10 m-4 hover:bg-warning bg-blue-200">
 				<input
 					type="radio"
                     name={id}
