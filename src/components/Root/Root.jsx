@@ -7,11 +7,13 @@ import 'react-toastify/dist/ReactToastify.css';
 
     export const SubjectContext = createContext([]);
 	export const CorrectAnsCounter = createContext(0);
+	export const WrongAnsCounter = createContext(0);
 
 
 const Root = () => {
     const {subjects} = useLoaderData();
 	const [correctCount , setCorrectCount] = useState(0)
+	const [wrongCount , setWrongCount] = useState(0)
     return (
         <div className='root-area'>
             		<ToastContainer
@@ -28,9 +30,11 @@ const Root = () => {
 			/>
         <SubjectContext.Provider value={subjects}>
 			<CorrectAnsCounter.Provider value={[correctCount , setCorrectCount]}>
+			<WrongAnsCounter.Provider value={[wrongCount , setWrongCount]}>
 			<Header />
         	<Outlet />
         	<Footer />
+		</WrongAnsCounter.Provider>
 		</CorrectAnsCounter.Provider>
         </SubjectContext.Provider>
        

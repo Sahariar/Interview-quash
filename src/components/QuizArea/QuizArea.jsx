@@ -13,7 +13,7 @@ const QuizArea = ({ quiz }) => {
 	let answerArea;
 	if (isActive) {
 		answerArea = (
-			<div className="bg-success lg:w-1/2 w-10/12 my-5 p-10  mx-auto rounded-xl shadow-xl">
+			<div className="bg-warning lg:w-1/2 w-10/12 my-5 p-10  mx-auto rounded-xl shadow-xl">
 				<h2 className="text-2xl text-neutral capitalize px-12 text-center">
 					{correctAnswer}
 				</h2>
@@ -24,8 +24,8 @@ const QuizArea = ({ quiz }) => {
 
 	return (
 		<div className="card mx-auto bg-blue-50 my-10 shadow-xl rounded-xl">
-			<div className="flex justify-center text-center pt-10 px-4">
-				<h2 className="title text-2xl px-10 ">Quiz:{finalQuestion}</h2>
+			<div className="flex xl:flex-row flex-col justify-center text-center md:pt-10 md:px-4">
+				<h2 className="title text-2xl px-10 pb-10 ">Quiz:{finalQuestion}</h2>
 				<div className="">
 					<button
 						className="btn btn-circle btn-outline btn-primary"

@@ -1,10 +1,11 @@
 import React, { useContext, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
-import { CorrectAnsCounter } from "../Root/Root";
+import { CorrectAnsCounter, WrongAnsCounter } from "../Root/Root";
 
 const Options = ({ option, quiz }) => {
 	const { correctAnswer, id } = quiz;
 	const [correctCount, setCorrectCount] = useContext(CorrectAnsCounter);
+	const [wrongCount , setWrongCount] = useContext(WrongAnsCounter);
 	const successAnswer = () =>
 		toast.success("Correct Answer,Next One", {
 			position: "top-center",
@@ -43,7 +44,7 @@ const Options = ({ option, quiz }) => {
 			setCorrectCount(correctCount + 1);
 		} else {
 			wrongAnswer();
-			setCorrectCount(correctCount);
+			setWrongCount(correctCount + 1);
 		}
 	};
 
