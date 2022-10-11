@@ -18,7 +18,12 @@
   * use props for Show quiz data.
   * Setup Correct answer and mark information
 
-
+* Feature
+ * SPA site,
+ * 404 page,
+ * Quiz Right Answer Count,
+ * Responsive site,
+ * React
 ## Install
 
 ```sh
