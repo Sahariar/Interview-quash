@@ -20,6 +20,7 @@
 
 * Feature
  * SPA site,
+ * Api Fetch,
  * 404 page,
  * Quiz Right Answer Count,
  * Responsive site,
