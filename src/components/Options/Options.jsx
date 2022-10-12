@@ -44,7 +44,7 @@ const Options = ({ option, quiz }) => {
 			setCorrectCount(correctCount + 1);
 		} else {
 			wrongAnswer();
-			setWrongCount(correctCount + 1);
+			setWrongCount(wrongCount + 1);
 		}
 	};
 
